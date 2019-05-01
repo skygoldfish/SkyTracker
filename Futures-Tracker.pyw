@@ -119,8 +119,8 @@ class MainWindow(QDialog, Ui_MainWindow):
         # ------------------------------------------------------------------------
         self.상태그림 = ['▼','▬','▲']
         self.상태문자 = ['매도', '대기', '매수']
-        self.trend_indicator = "▬"*30
-        self.trend_indicator_len = 30
+        self.trend_indicator = "▬"*33
+        self.trend_indicator_len = 33
 
     def QueryInit(self):
         self.XQ_t0167 = t0167(parent=self)

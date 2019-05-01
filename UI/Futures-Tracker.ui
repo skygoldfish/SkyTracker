@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Dialog</class>
  <widget class="QDialog" name="Dialog">
@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>370</width>
-    <height>220</height>
+    <width>400</width>
+    <height>238</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -32,7 +32,7 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>280</x>
+     <x>300</x>
      <y>80</y>
      <width>90</width>
      <height>100</height>
@@ -64,8 +64,8 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label_log">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>180</y>
+     <x>10</x>
+     <y>190</y>
      <width>370</width>
      <height>20</height>
     </rect>
@@ -83,7 +83,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QPushButton" name="pushButton_focus">
    <property name="geometry">
     <rect>
-     <x>280</x>
+     <x>300</x>
      <y>30</y>
      <width>90</width>
      <height>40</height>
@@ -96,7 +96,7 @@ p, li { white-space: pre-wrap; }
   <widget class="QPushButton" name="pushButton_start">
    <property name="geometry">
     <rect>
-     <x>280</x>
+     <x>300</x>
      <y>0</y>
      <width>90</width>
      <height>31</height>
@@ -112,9 +112,9 @@ p, li { white-space: pre-wrap; }
   <widget class="QLabel" name="label_trend">
    <property name="geometry">
     <rect>
-     <x>2</x>
-     <y>200</y>
-     <width>370</width>
+     <x>10</x>
+     <y>210</y>
+     <width>371</width>
      <height>20</height>
     </rect>
    </property>
@@ -131,9 +131,9 @@ p, li { white-space: pre-wrap; }
   <widget class="QComboBox" name="comboBox_item">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>10</x>
      <y>0</y>
-     <width>270</width>
+     <width>281</width>
      <height>22</height>
     </rect>
    </property>
@@ -159,7 +159,7 @@ p, li { white-space: pre-wrap; }
    </item>
    <item>
     <property name="text">
-     <string>Dow mini</string>
+     <string>NASDAQ mini</string>
     </property>
    </item>
    <item>
@@ -181,9 +181,9 @@ p, li { white-space: pre-wrap; }
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>10</x>
      <y>30</y>
-     <width>271</width>
+     <width>281</width>
      <height>151</height>
     </rect>
    </property>
@@ -961,7 +961,7 @@ color: rgb(0, 0, 0);</string>
       <rect>
        <x>120</x>
        <y>0</y>
-       <width>140</width>
+       <width>155</width>
        <height>100</height>
       </rect>
      </property>
