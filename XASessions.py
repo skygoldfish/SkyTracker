@@ -38,7 +38,7 @@ class XASessionEvents(object):
 class XASession:
     def __init__(self, parent=None):
         self.ActiveX = win32com.client.DispatchWithEvents("XA_Session.XASession", XASessionEvents)
-        #self.ActiveX.SetMode("_XINGAPI7_","TRUE")
+        self.ActiveX.SetMode("_XINGAPI7_","TRUE")
         if parent == None:
             self.ActiveX.set_parent(parent=self)
         else:
