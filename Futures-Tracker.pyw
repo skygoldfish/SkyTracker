@@ -87,6 +87,7 @@ class MainWindow(QDialog, Ui_MainWindow):
         self.ONETICK = 0.01
         self.TICKADJUST = 0
         self.myformat = "%0.2f"
+        self.myformat_str = "%s"
         self.signedformat = self.myformat.replace("%", "%+")
         self.precision = '0.01000'
         
@@ -492,6 +493,7 @@ class MainWindow(QDialog, Ui_MainWindow):
             self.버퍼_가격.append(result['체결가격'])
             self.버퍼_거래량.append(result['건별체결수량'])
             현재가 = result['체결가격']
+            현재가1 = format(현재가, ',')
             self.현재가 = 현재가
 
             self.ShowLossCut(현재가=현재가)
@@ -536,13 +538,14 @@ class MainWindow(QDialog, Ui_MainWindow):
 
             현재시각 = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            SHORT = signal[self.SHORTSTR].values[-1]
+            SHORT = round(signal[self.SHORTSTR].values[-1], 2)
+            SHORT1 = format(SHORT, ',')
             DIFF = signal[self.DIFFSTR].values[-1]
 
             y = self.Signal_BreakOutMA(현재가,SHORT)
             self.ShowTrend(y)
 
-            _f = "%s [%s-%s]" % (self.myformat,self.myformat, self.myformat)
+            _f = "%s [%s - %s]" % (self.myformat,self.myformat, self.myformat)
             self.lineEdit_price.setText(_f % (현재가, SHORT, DIFF))
 
             currentstatus = "{}".format(self.상태그림[y+1])
